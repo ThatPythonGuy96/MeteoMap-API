@@ -1,0 +1,4 @@
+api_env/
+data/
+db.sqlite3
+.cache.sqlite
