@@ -360,7 +360,8 @@
                 <h1>Visualize & Analyze<br>Meteorological Data<br>Effortlessly</h1>
                 <p>MeteoMap helps meteorologists, researchers,<br>and organizations transform raw climate data<br>into actionable insights with ease.</p>
                 <div class="hero-buttons">
-                    <button class="btn-primary" onclick="downloadApp()">Download Now</button>
+                    {% comment %} <button class="btn-primary" onclick="downloadApp()">Download Now</button> {% endcomment %}
+                    <a href="{% url 'map:download_file' 'meteogis.exe' %}" class="btn-primary">Download</a>
                     <button class="btn-secondary" onclick="watchDemo()">Watch Demo</button>
                 </div>
             </div>

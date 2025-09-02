@@ -14,4 +14,6 @@ urlpatterns = [
     path('plot-graph/', views.PlotGraph.as_view(), name='plot-graph'),
     path('spi/', views.SPI.as_view(), name='calculate_spi'),
     path('spei/', views.SPEI.as_view(), name='calculate_spei'),
+
+    path('download/<str:filename>/', views.download_file, name='download_file'),
 ]
