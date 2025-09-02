@@ -4,9 +4,9 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, Spec
 
 app_name="map"
 urlpatterns = [
-    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
+    path('schema/', SpectacularAPIView.as_view(), name='schema'),
     path('', SpectacularSwaggerView.as_view(url_name='map:schema'), name='swagger-ui'),
-    path('api/schema/redoc/', SpectacularRedocView.as_view(url_name='map:schema'), name='redoc'),
+    path('schema/redoc/', SpectacularRedocView.as_view(url_name='map:schema'), name='redoc'),
 
     path('nedcdf-to-cdv/', views.netCDF_to_csv.as_view(), name='netcdf-to-csv'),
     path('nedcdf-to-shp/', views.netCDF_to_Shp.as_view(), name='netcdf-to-shp'),
