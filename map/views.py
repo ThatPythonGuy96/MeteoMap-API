@@ -4,22 +4,24 @@ from rest_framework.views import APIView
 from rest_framework import status, permissions
 from . import serializers
 from pathlib import Path
-import json, io, tempfile, random, os, sys, time, rioxarray, matplotlib, tempfile, rasterio, folium
+import json, io, tempfile, random, os, sys, time, tempfile
+# import rioxarray, rasterio, folium
 import pandas as pd
 from scipy import stats as st
+import matplotlib
 matplotlib.use('Agg')
-from shapely.geometry import Point, mapping
+# from shapely.geometry import Point, mapping
 import matplotlib.dates as mdates
 import numpy as np
 import matplotlib.pyplot as plt
-import geopandas as gpd
+# import geopandas as gpd
 import netCDF4 as nc
 from django.http import HttpResponse
-from rasterio.transform import from_origin
-from folium.plugins import Draw, MousePosition
-from folium.raster_layers import ImageOverlay
-from rasterio.mask import mask
-import xarray as xr
+# from rasterio.transform import from_origin
+# from folium.plugins import Draw, MousePosition
+# from folium.raster_layers import ImageOverlay
+# from rasterio.mask import mask
+# import xarray as xr
 from matplotlib.figure import Figure
 from user.views import get_client_ip
 from map.service.open_meteo import fetch_open_meteo_data
