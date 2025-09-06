@@ -19,7 +19,8 @@ Django==5.2.4
 django-cors-headers==4.7.0
 djangorestframework==3.16.0
 djangorestframework_simplejwt==5.5.1
-drf-spectacular-sidecar==0.28.0
+drf-spectacular==0.28.0
+drf-spectacular-sidecar==2025.9.1
 fiona==1.10.1
 flatbuffers==25.2.10
 folium==0.20.0
@@ -75,4 +76,3 @@ urllib3-future==2.13.900
 wassima==1.2.2
 xarray==2025.7.1
 xyzservices==2025.4.0
-gunicorn
