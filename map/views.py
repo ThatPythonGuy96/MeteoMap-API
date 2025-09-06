@@ -25,17 +25,7 @@ from django.http import HttpResponse
 from matplotlib.figure import Figure
 from user.views import get_client_ip
 from map.service.open_meteo import fetch_open_meteo_data
-
-def download_file(request, filename):
-    # # Construct the full file path
-    # file_path = os.path.join(settings.MEDIA_ROOT, filename)  # or wherever your file is stored
-    
-    # if os.path.exists(file_path):
-    #     return FileResponse(open(file_path, 'rb'), as_attachment=True, filename=filename)
-    # else:
-    #     raise Http404("File not found")
-    pass
-    
+ 
 def temperory_file(file):
     with tempfile.NamedTemporaryFile(delete=False, suffix='.nc') as tmp:
         for chunk in file.chunks():
